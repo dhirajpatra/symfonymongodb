@@ -1,0 +1,7 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+nasa:
+    resource: "@NasaBundle/Resources/config/routing.yml"
+    prefix:   /nasa/

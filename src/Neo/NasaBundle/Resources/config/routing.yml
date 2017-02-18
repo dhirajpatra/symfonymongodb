@@ -1,0 +1,16 @@
+NasaBundle:
+    resource: "@NasaBundle/Controller"
+    type:     annotation
+    defaults: { _controller: NasaBundle:Default:index }
+
+getneodata:
+    path: /getneo
+    defaults: { _controller: NasaBundle:Default:getneo }
+
+hazardousdata:
+    path: /neo/hazardous
+    defaults: { _controller: NasaBundle:Default:hazardous }
+
+fastestdata:
+    path: /neo/fastest
+    defaults: { _controller: NasaBundle:Default:fastest }

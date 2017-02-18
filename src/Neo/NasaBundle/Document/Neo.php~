@@ -1,0 +1,49 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: tanushreepatra
+ * Date: 16/2/17
+ * Time: 8:25 PM
+ */
+
+namespace Neo\NasaBundle\Document;
+
+use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
+
+/**
+ * @MongoDB\Document
+ */
+class Neo
+{
+    /**
+     * @MongoDB\Id
+     */
+    protected $id;
+
+    /**
+     * @MongoDB\Field(type="date")
+     */
+    protected $date;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $reference;
+
+    /**
+     * @MongoDB\Field(type="string")
+     */
+    protected $name;
+
+    /**
+     * @MongoDB\Field(type="float")
+     */
+    protected $speed;
+
+    /**
+     * @MongoDB\Field(type="boolean")
+     */
+    protected $hazardous;
+
+
+}
